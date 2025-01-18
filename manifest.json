@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Reading Time Estimator",
+  "version": "2.1",
+  "description": "Estimate reading time for the current webpage",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "time.png",
+      "48": "time.png",
+      "128": "time.png"
+    }
+  },
+  "icons": {
+    "16": "time.png",
+    "48": "time.png",
+    "128": "time.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

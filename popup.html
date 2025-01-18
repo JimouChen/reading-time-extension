@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>页面阅读时长估算</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            width: 300px; /* 设置宽度 */
+            background: linear-gradient(to bottom, #f0f9ff, #cbebff); /* 背景渐变 */
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #4CAF50; /* 按钮背景颜色 */
+            color: white;
+            border: none;
+            border-radius: 20px; /* 按钮圆角 */
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049; /* 按钮悬停颜色 */
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .about-button {
+            margin-top: 20px;
+            background-color: #2196F3; /* About按钮背景颜色 */
+            border-radius: 20px; /* 按钮圆角 */
+        }
+
+        .about-button:hover {
+            background-color: #1E88E5; /* 按钮悬停颜色 */
+        }
+
+        .version {
+            margin-top: 10px;
+            font-size: 15px;
+            color: #555;
+            font-weight: bold; /* 加粗字体 */
+        }
+    </style>
+</head>
+<body>
+<h1>页面阅读时长估算</h1>
+<button id="estimateBtn">点击估算所需阅读时长</button>
+<p id="result"></p>
+
+<button id="aboutBtn" class="about-button">About</button>
+<p id="version" class="version"></p> <!-- 版本号显示区域 -->
+
+<script src="popup.js"></script>
+</body>
+</html>
